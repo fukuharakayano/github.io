@@ -1,122 +1,68 @@
-/*ブレークポイント600px*/
-@media screen and(max-width: 600px) {
-	.container{
-		max-width: 600px;
-	}
-}
-/*ブレークポイント1000px*/
-@media screen and(max-width: 1000px) {
-	.container{
-		max-width: 1000px;
-	}
-}
 body {
-	margin: 0;
-	font-family: "Hiragino Kaku Gothic ProN";
-  }
+  font-family: "Avenir Next";
+  background-color: #f7f7f7;
+  margin: 0;
+}
 
-  a {
-	text-decoration: none;
-  }
-
-  .container {
-	width: 1170px;
-	padding: 0 15px;
-	margin: 0 auto;
-  }
-
-  .top-wrapper {
-	padding: 180px 0 100px 0;
-	background-image: url(../images/背景.jpeg);
-	background-size: cover;
-	height: 350px;
-	color: white;
-	text-align: center;
-
-    h1 {
-	opacity: 0.7;
-	font-size: 45px;
-	letter-spacing: 5px;
-    }
-  }
-
-  .container span {
-	  color: yellow;
-  }
-
-
-  header {
-	height: 65px;
-	width: 100%;
-	background-color: rgba(34, 49, 52, 0.9);
-  }
-
+header {
+  background-color: #26d0c9;
+  height: 65px;
+  width: 100%;
   .header-logo {
-	font-size: 20px;
-	margin-top: 15px;
-	color:white;
-	float: left;
+    font-size: 20px;
+    margin: 15px 10px;
+    color: white;
+    float: left;
   }
+}
 
-  .header-left {
-	float: left;
+.container {
+  background-image: url(../images/背景.jpeg);
+  background-size: cover;
+  height: 350px;
+  padding: 180px 0 100px 0;
+  color: white;
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 80px;
+    opacity: 0.7;
+    span {
+      color: yellow;
+    }
   }
+}
 
-  .main-wrapper {
-	height: 550px;
-	padding-bottom: 80px;
-	background-color: #f7f7f7;
-  }
-
+.container2 {
+  height: 600px;
+  padding-bottom: 80px;
   .heading {
-	padding-top: 60px;
-	padding-bottom: 30px;
-	color: #5f5d60;
-
-    h2 {
-	font-weight: normal;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  .flex-container {
+    display: flex;
+    .flex-item {
+      flex-basis: 100%;
+      .image-wrap {
+        position: relative;
+        overflow: hidden;
+        padding-top: 60%;
+        margin: 10px 5px;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .text {
+          overflow: hidden;
+        }
+      }
     }
   }
-  /* BOXデザイン004 */
-  .div_design004 {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-			flex-direction: row;
-    .div_design004_contents {
-	    background: #ddd;
-	    width: 300px;
-	    height: 300px;
-	    margin: 5px;
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex;
-	    -webkit-box-pack: start;
-		    -ms-flex-pack: start;
-			    justify-content: flex-start;
-	    -webkit-box-align: center;
-		    -ms-flex-align: center;
-			    align-items: center;
-	    -webkit-box-orient: vertical;
-	    -webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-			    flex-direction: column;
-
-        img {
-	    width: 100%;
-	    height: 100%;
-        }
-
-        p {
-	    font-size: 1rem;
-	    width: auto;
-	    margin: 0;
-	    padding: 1rem;
-	    display: block;
-	    text-align: center;
-        }
-    }
 }
